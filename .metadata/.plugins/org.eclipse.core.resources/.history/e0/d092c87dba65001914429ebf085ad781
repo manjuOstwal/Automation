@@ -1,0 +1,18 @@
+package ProductBuy;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+/**
+ * Hello world!
+ *
+ */
+public class HomePage 
+{
+	
+	
+		 WebDriver driver;
+
+		  
+}

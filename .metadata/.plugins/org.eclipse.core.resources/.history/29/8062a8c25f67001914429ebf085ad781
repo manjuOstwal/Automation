@@ -1,0 +1,14 @@
+package ProductBuy;
+
+public class Config {
+	
+	public Config(Method method)
+	{
+		try
+		{
+			
+		}
+		
+	}
+
+}

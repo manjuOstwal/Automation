@@ -1,0 +1,23 @@
+package TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import ProductBuy.HomePage;
+
+
+
+/**
+ * Unit test for simple App.
+ */
+public class FlipkartTestCase 
+{
+	
+	@Test
+	public void testLogin(WebDriver driver)
+	{
+		HomePage hm = new HomePage();
+		hm.flipkartHomePage();
+		hm.clickLogin();
+	}
+}

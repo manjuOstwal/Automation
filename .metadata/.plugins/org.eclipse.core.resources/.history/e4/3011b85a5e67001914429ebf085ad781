@@ -1,0 +1,15 @@
+package ProductBuy;
+
+import java.lang.reflect.Method;
+
+import org.testng.annotations.DataProvider;
+
+public class Config {
+	
+	@DataProvider(name = "GetDriver")
+	public Object[][] GetMobileTestConfig(Method method)
+	{
+		Config testConf = new Config(method);
+		
+
+}

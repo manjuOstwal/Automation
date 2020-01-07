@@ -1,0 +1,21 @@
+package TestCases;
+
+import ProductBuy.HomePage;
+import junit.framework.Test;
+import junit.framework.TestCase;
+
+
+/**
+ * Unit test for simple App.
+ */
+public class FlipkartTestCase extends TestCase
+{
+	
+	@Test
+	public void testLogin(WebDriver driver)
+	{
+		HomePage hm = new HomePage(driver);
+		hm.flipkartHomePage();
+		hm.clickLogin();
+	}
+}

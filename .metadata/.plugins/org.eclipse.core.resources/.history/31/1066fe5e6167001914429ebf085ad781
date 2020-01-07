@@ -1,0 +1,20 @@
+package ProductBuy;
+
+import java.lang.reflect.Method;
+
+import org.testng.annotations.DataProvider;
+
+public class TestBase {
+	
+	@DataProvider(name = "GetDriver")
+	public Object[][] GetMobileTestConfig(Method method)
+	{
+		Config testConf = new Config(method);
+		testConf.testName = method.getDeclaringClass().getName() + "." + method.getName();
+		testConf.testStartTime = Helper.getCurrentDateTime("yyyy-MM-dd HH:mm:ss");
+		threadLocalConfig.set(new Config[] { testConf });
+		return new Object[][] { { testConf } };
+		
+
+}
+}

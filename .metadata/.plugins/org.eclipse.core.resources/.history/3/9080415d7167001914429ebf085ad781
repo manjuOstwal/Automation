@@ -1,0 +1,8 @@
+package ProductBuy;
+
+public class LoginPopUp {
+	
+	@FindBy(xpath = "//input[@class='_2zrpKA']")
+	private 
+
+}

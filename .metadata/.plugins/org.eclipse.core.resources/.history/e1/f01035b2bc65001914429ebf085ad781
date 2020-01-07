@@ -1,0 +1,33 @@
+package ProductBuy;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
+
+/**
+ * Hello world!
+ *
+ */
+public class HomePage 
+{
+	
+	@FindBy(xpath = "//a[contains(.,'Login & Signup')]")
+	private WebElement login;
+			 WebDriver driver;
+
+		  public void flipkartHomePage() 
+		  {
+		   driver = new FirefoxDriver();
+		   driver.get("https://www.flipkart.com/");
+		  }
+		  
+		  public void clickLogin() 
+		  {
+		   driver = new FirefoxDriver();
+		   driver.get("https://www.flipkart.com/");
+		  }
+		  
+    
+}

@@ -1,0 +1,20 @@
+package ProductBuy;
+
+/**
+ * Hello world!
+ *
+ */
+public class HomePage 
+{
+	
+	
+		 Public WebDriver driver;
+
+		  @Test
+		  public void verifySearch() {
+		   driver = new FirefoxDriver();
+		   driver.get("http://only-testing-blog.blogspot.in/");
+		   driver.quit();
+		  }
+    
+}

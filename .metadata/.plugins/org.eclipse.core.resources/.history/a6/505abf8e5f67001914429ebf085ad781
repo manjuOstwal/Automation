@@ -1,0 +1,16 @@
+package ProductBuy;
+
+import java.lang.reflect.Method;
+
+import org.testng.annotations.DataProvider;
+
+public class TestBase {
+	
+	@DataProvider(name = "GetDriver")
+	public Object[][] GetMobileTestConfig(Method method)
+	{
+		WebDriver driver = new WebDriver();
+		
+
+}
+}

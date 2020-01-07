@@ -1,0 +1,18 @@
+package TestCases;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+
+
+/**
+ * Unit test for simple App.
+ */
+public class FlipkartTestCase extends TestCase
+{
+	
+	@Test
+	public void testLogin()
+	{
+		
+	}
+}

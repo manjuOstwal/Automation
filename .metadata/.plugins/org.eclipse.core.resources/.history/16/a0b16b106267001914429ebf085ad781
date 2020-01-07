@@ -1,0 +1,26 @@
+package TestCases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import ProductBuy.HomePage;
+
+
+public class FlipkartTestCase 
+{
+	public WebDriver driver;
+	
+	@Test(description="test",dataProvider = "testgg")
+	public void testLogin(WebDriver driver)
+	{
+		
+		driver = new FirefoxDriver();
+		   driver.get("https://www.flipkart.com/");
+		   driver.findElement(By.xpath("//a[contains(.,'Login & Signup')]"));
+		HomePage hm = new HomePage(driver);
+		hm.flipkartHomePage();
+		hm.clickLogin();
+	}
+}

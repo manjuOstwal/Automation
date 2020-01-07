@@ -1,0 +1,46 @@
+package ProductBuy;
+
+public class TVRemote implements RemoteControl {
+	
+	public void turnOff()
+	{
+		System.out.println("turnOff Tv");
+	}
+	
+	public void turnOn()
+	{
+		System.out.println("turnOn Tv");
+	}
+	
+	public void volumeUp()
+	{
+		System.out.println("Volume UP");
+	}
+	
+	public void volumeDown()
+	{
+		System.out.println("Volume Down");
+	}
+   
+    
+    void ListOfChannels();
+    void favourites();
+
+	
+	public void method1()
+	   {
+		System.out.println("implementation of method1");
+	   }
+	   public void method2()
+	   {
+		System.out.println("implementation of method2");
+	   }
+	   
+	    
+	   public static void main(String arg[])
+	   {
+		   TVRemote obj = new TVRemote();
+		obj.method1();
+	   }
+
+}

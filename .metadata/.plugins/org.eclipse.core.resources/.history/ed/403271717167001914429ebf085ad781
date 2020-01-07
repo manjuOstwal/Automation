@@ -1,0 +1,13 @@
+package ProductBuy;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPopUp {
+	
+	@FindBy(xpath = "//input[@class='_2zrpKA']")
+	private WebElement phoneNo;
+	
+	
+
+}

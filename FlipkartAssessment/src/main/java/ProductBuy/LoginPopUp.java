@@ -1,0 +1,36 @@
+package ProductBuy;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPopUp {
+	
+	@FindBy(xpath = "//input[@class='_2zrpKA']")
+	private WebElement phoneNo;
+	
+	@FindBy(xpath = "//input[contains(@class,'_2zrpKA _3v41xv')]")
+	private WebElement password;
+	
+	@FindBy(xpath = "//button[contains(.,'Login')]")
+	private WebElement login;
+	
+	public WebDriver driver;
+	
+	 public LoginPopUp(WebDriver driver)
+	 {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	 }
+	
+	public Dashboard loginWithCredentials() throws InterruptedException
+	{
+		Thread.sleep(20);
+		phoneNo.sendKeys("8588861261");
+		password.sendKeys("Password@123");
+		login.click();
+		return new Dashboard(driver);
+	}
+
+}

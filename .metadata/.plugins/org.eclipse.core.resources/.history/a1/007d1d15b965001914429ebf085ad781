@@ -1,0 +1,23 @@
+package ProductBuy;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+/**
+ * Hello world!
+ *
+ */
+public class HomePage 
+{
+	
+	
+		 WebDriver driver;
+
+		  @Test
+		  public void verifySearch() {
+		   driver = new FirefoxDriver();
+		   driver.get("http://only-testing-blog.blogspot.in/");
+		   driver.quit();
+		  }
+    
+}

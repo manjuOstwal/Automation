@@ -1,0 +1,16 @@
+package ProductBuy;
+
+import java.lang.reflect.Method;
+
+public class Config {
+	
+	public Config(Method method)
+	{
+		try
+		{
+			
+		}
+		
+	}
+
+}

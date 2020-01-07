@@ -1,0 +1,19 @@
+package TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import ProductBuy.HomePage;
+
+
+public class FlipkartTestCase
+{
+	
+	@Test
+	public void testLogin()
+	{
+		HomePage hm = new HomePage(WebDriver driver);
+		hm.flipkartHomePage();
+		hm.clickLogin();
+	}
+}
